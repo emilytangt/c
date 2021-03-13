@@ -1,0 +1,24 @@
+//判断天气好不好，外面冷不冷（人呆在哪里，在哪里喝柠檬水）
+#include <stdio.h>
+
+int main()
+{
+	int weather = 0;
+	printf("请输入天气好不好(好1，不好2)：");
+		scanf("%d", &weather);
+	
+	int temperature = 0;
+	printf("请输入温度冷不冷（冷1，不冷2）：");
+		scanf("%d",&temperature);
+	
+	if (weather == 1)
+	{ printf("我们去室外，");
+	  if (temperature == 1)
+		  printf("我们在太阳底下，");
+	  else
+		  printf("我们在树荫底下，");	
+	}
+	else
+	printf("我们在屋子里面，");
+
+	printf("喝柠檬水。");

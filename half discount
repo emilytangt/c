@@ -1,0 +1,28 @@
+//判断有无5折
+#include <stdio.h>
+
+int main()
+{
+	double price = 3.5;
+	int mds = 0; // mds是买的数
+	printf("你要买多少个：");
+	scanf("%d", &mds);
+	double zongjia = 0;
+		
+	if (mds > 10)
+	{
+		price = price * 0.5;
+		zongjia = price * mds;
+	}
+	else if (mds < 0)
+	
+	{
+	printf("不需要倒贴");
+	}
+	else
+		zongjia = price * mds;
+	
+	printf("您买了%d个，每个%.1f元，总价为%.2f。", mds, price, zongjia);
+	
+	return 0;
+}
